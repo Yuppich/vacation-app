@@ -30,27 +30,27 @@ const VacationRequestForm = () => {
         setEndDate(newEndDate);
     };
 
-    const saveVacationRequest = async (request) => {
-        try {
-            const response = await fetch('http://localhost:3000/vacation_requests/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(request),
-            });
+    //const saveVacationRequest = async (request) => {
+    //    try {
+    //        const response = await fetch('/vacation_requests/', {
+    //            method: 'POST',
+    //            headers: {
+    //                'Content-Type': 'application/json',
+    //            },
+    //            body: JSON.stringify(request),
+    //        });
 
-            if (!response.ok) {
-                throw new Error('Failed to save vacation request');
-            }
+    //        if (!response.ok) {
+    //            throw new Error('Failed to save vacation request');
+    //        }
 
-            // Handle the response or perform any necessary actions
-            const data = await response.json();
-            console.log('Vacation request saved:', data);
-        } catch (error) {
-            console.error('Error saving vacation request:', error);
-        }
-    };
+    //        // Handle the response or perform any necessary actions
+    //        const data = await response.json();
+    //        console.log('Vacation request saved:', data);
+    //    } catch (error) {
+    //        console.error('Error saving vacation request:', error);
+    //    }
+    //};
 
     const handleSubmit = (event) => {
         event.preventDefault();
