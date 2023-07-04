@@ -70,7 +70,7 @@ const VacationRequestForm = () => {
         };
 
         // Simulate POST request to API endpoint
-        saveVacationRequest(newRequest);
+        //saveVacationRequest(newRequest);
 
         // Clear the form fields
         setStartDate('');
