@@ -1,6 +1,30 @@
 import React, { useState } from 'react';
-import { calculateEndDate, calculateNumberOfDays } from './utils';
+import { calculateEndDate, calculateNumberOfDays, saveVacationRequest } from './utils';
 import { useNavigate } from 'react-router-dom';
+
+
+//// Simulate POST request to API endpoint (dummy call)
+//const saveVacationRequest = async (request) => {
+//    try {
+//        const response = await fetch('/vacation_requests/', {
+//            method: 'POST',
+//            headers: {
+//                'Content-Type': 'application/json',
+//            },
+//            body: JSON.stringify(request),
+//        });
+
+//        if (!response.ok) {
+//            throw new Error('Failed to save vacation request');
+//        }
+
+//        // Handle the response or perform any necessary actions
+//        const data = await response.json();
+//        console.log('Vacation request saved:', data);
+//    } catch (error) {
+//        console.error('Error saving vacation request:', error);
+//    }
+//};
 
 const VacationRequestForm = () => {
     const [startDate, setStartDate] = useState('');
@@ -30,28 +54,6 @@ const VacationRequestForm = () => {
         setEndDate(newEndDate);
     };
 
-    //const saveVacationRequest = async (request) => {
-    //    try {
-    //        const response = await fetch('/vacation_requests/', {
-    //            method: 'POST',
-    //            headers: {
-    //                'Content-Type': 'application/json',
-    //            },
-    //            body: JSON.stringify(request),
-    //        });
-
-    //        if (!response.ok) {
-    //            throw new Error('Failed to save vacation request');
-    //        }
-
-    //        // Handle the response or perform any necessary actions
-    //        const data = await response.json();
-    //        console.log('Vacation request saved:', data);
-    //    } catch (error) {
-    //        console.error('Error saving vacation request:', error);
-    //    }
-    //};
-
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -69,8 +71,8 @@ const VacationRequestForm = () => {
             comment,
         };
 
-        // Simulate POST request to API endpoint
-        //saveVacationRequest(newRequest);
+        // Simulate POST request to API endpoint (dummy call)
+        saveVacationRequest(newRequest);
 
         // Clear the form fields
         setStartDate('');
