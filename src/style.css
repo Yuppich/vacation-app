@@ -1,0 +1,72 @@
+/* Custom styles for VacationRequestList component */
+.container {
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.table {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.vh-100 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.header-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.submit{
+    margin: 5px 5px 5px 5px;
+}
+
+
+.vh-100 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.submit-button {
+    margin-top: 1rem;
+}
